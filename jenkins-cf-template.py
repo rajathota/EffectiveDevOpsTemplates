@@ -30,8 +30,8 @@ from awacs.aws import (
 
 from awacs.sts import AssumeRole
 
-ApplicationName = "helloworld"
-ApplicationPort = "3000"
+ApplicationName = "jenkins"
+ApplicationPort = "8080"
 GithubAccount = "rajathota"
 GithubAnsibleURL = "https://github.com/{}/ansible".format(GithubAccount)
 

@@ -1,7 +1,8 @@
 """Generating CloudFormation template."""
-
 from ipaddress import ip_network
+
 from ipify import get_ip
+
 from troposphere import (
     Base64,
     ec2,
@@ -18,7 +19,7 @@ PublicCidrIp = str(ip_network(get_ip()))
 
 t = Template()
 
-t.set_description("Effective DevOps in AWS: HelloWorld web application")
+t.add_description("Effective DevOps in AWS: HelloWorld web application")
 
 t.add_parameter(Parameter(
     "KeyPair",
